@@ -130,7 +130,7 @@ DEL spring:session:sessions:<session-id>
 
 ---
 
-### 3.7. Borrar todas las sesiones (deslogueo global). El comando se ejecuta en la terminal del sistema donde esta instalado REDIS, por ejemplo dentro de Docker. En este ejemplo ingresamos primero a la terminal del contenedor docker.
+### 3.7. Borrar todas las sesiones (deslogueo global). Acceder al CLI de Redis en Docker.
 
 ```bash
 docker exec -it <nombre_del_contenedor_redis> bash
@@ -165,7 +165,7 @@ Los datos complejos se guardan serializados (no legibles directamente), pero pue
 ## Recursos útiles
 
 - [Documentación oficial de Redis](https://redis.io/commands/)
-- [Spring Session Data Redis](https://docs.spring.io/spring-session/reference/data-redis.html)
+- [Spring Session Data Redis](https://docs.spring.io/spring-session/reference/configuration/redis.html)
 - [Serialización en Java (Oracle)](https://docs.oracle.com/javase/8/docs/platform/serialization/spec/serial-arch.html)
 
 ---
