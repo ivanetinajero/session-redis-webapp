@@ -1,5 +1,6 @@
 package dev.ivantd.app.model;
 
+import java.io.Serializable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,7 +9,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Sucursales") // Hibernate mapea a esta tabla con MySQL.
-public class Sucursal {
+public class Sucursal implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // auto_increment MySQL

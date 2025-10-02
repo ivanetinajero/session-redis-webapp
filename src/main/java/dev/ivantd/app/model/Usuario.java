@@ -1,5 +1,6 @@
 package dev.ivantd.app.model;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import jakarta.persistence.Column;
@@ -16,7 +17,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "Usuarios")
-public class Usuario {
+public class Usuario implements Serializable{
+
+    private static final long serialVersionUID = 1L;
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
