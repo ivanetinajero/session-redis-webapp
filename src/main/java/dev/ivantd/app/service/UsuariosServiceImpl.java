@@ -34,5 +34,10 @@ public class UsuariosServiceImpl implements IUsuariosService {
 		logger.info("Usuario autenticado correctamente: {}", username);
 		return usuario;
 	}
+
+	@Override
+	public Usuario buscarPorUsername(String username) {
+		return usuariosRepository.findByUsername(username).orElse(null);
+	}
     
 }
